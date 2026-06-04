@@ -7,10 +7,14 @@
 		"lint": "pnpm biome lint .",
 		"format": "pnpm biome format . --write",
 		"check": "pnpm biome check . --write",
-		"typecheck": "pnpm --recursive typecheck"
+		"typecheck": "pnpm --recursive typecheck",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "latest",
-		"@tsconfig/strictest": "latest"
+		"@commitlint/cli": "^21.0.2",
+		"@commitlint/config-conventional": "^21.0.2",
+		"@tsconfig/strictest": "latest",
+		"husky": "^9.1.7"
 	}
 }
