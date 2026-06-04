@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build
+dist
+build
+.turbo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Nix
+.direnv
+.devenv
+
+# DB
+*.sql
+*.dump
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+*.swp
+*.swo

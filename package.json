@@ -1,0 +1,16 @@
+{
+	"name": "noikos",
+	"private": true,
+	"scripts": {
+		"dev": "pnpm --parallel --filter './apps/*' dev",
+		"build": "pnpm --filter './packages/*' build && pnpm --filter './apps/*' build",
+		"lint": "pnpm biome lint .",
+		"format": "pnpm biome format . --write",
+		"check": "pnpm biome check . --write",
+		"typecheck": "pnpm --recursive typecheck"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "latest",
+		"@tsconfig/strictest": "latest"
+	}
+}
