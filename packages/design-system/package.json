@@ -10,6 +10,7 @@
 		"build": "tsc -p tsconfig.build.json",
 		"check": "biome check ./src",
 		"check:fix": "biome check ./src --write",
+		"dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
 		"typecheck": "tsc --noEmit"
 	}
 }
