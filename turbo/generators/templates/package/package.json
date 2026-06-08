@@ -1,0 +1,15 @@
+{
+	"name": "@noikos/{{name}}",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"description": "{{description}}",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"check": "biome check ./src",
+		"check:fix": "biome check ./src --write",
+		"typecheck": "tsc --noEmit"
+	}
+}
