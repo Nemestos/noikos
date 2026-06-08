@@ -1,0 +1,23 @@
+{
+	"name": "@noikos/{{name}}",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"description": "{{description}}",
+	"main": "./dist/index.js",
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"dev": "tsx watch src/index.ts",
+		"check": "biome check ./src",
+		"check:fix": "biome check ./src --write",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@noikos/types": "workspace:*",
+		"@noikos/utils": "workspace:*",
+		"effect": "^3.21.3"
+	},
+	"devDependencies": {
+		"tsx": "^4.22.4"
+	}
+}

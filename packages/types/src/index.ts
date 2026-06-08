@@ -1,3 +1,1 @@
-export interface Test {
-	foo: string;
-}
+export const foo: string = "bar";
