@@ -3,12 +3,12 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo build",
-		"check": "biome check .",
-		"check:fix": "biome check . --write",
+		"check": "turbo check",
+		"check:fix": "turbo check:fix",
 		"dev": "turbo dev",
 		"prepare": "husky",
 		"sort": "sort-package-json 'package.json' 'apps/*/package.json' 'packages/*/package.json'",
-		"typecheck": "pnpm --recursive typecheck"
+		"typecheck": "turbo typecheck"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.16",

@@ -17,8 +17,11 @@
 			"inputs": ["src/**", "tsconfig*.json"],
 			"cache": true
 		},
-		"//#check": {},
-		"//#check:fix": {
+		"check": {
+			"inputs": ["src/**", "biome.json"],
+			"cache": true
+		},
+		"check:fix": {
 			"cache": false
 		}
 	}

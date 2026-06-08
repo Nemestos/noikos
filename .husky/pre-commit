@@ -1,4 +1,4 @@
 #!/bin/sh
 pnpm sort
-turbo check:fix
+pnpm check:fix
 git add -A
