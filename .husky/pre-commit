@@ -1,1 +1,4 @@
-pnpm biome check .
+#!/bin/sh
+pnpm sort
+turbo check:fix
+git add -A

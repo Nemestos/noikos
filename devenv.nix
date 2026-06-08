@@ -38,6 +38,7 @@
     db-migrate.exec = "pnpm --filter './apps/api' mikro-orm migration:up";
     db-rollback.exec = "pnpm --filter './apps/api' mikro-orm migration:down";
     db-fresh.exec = "pnpm --filter './apps/api' mikro-orm schema:fresh --run";
+    db-studio.exec = "pnpm --filter './apps/api' mikro-orm debug";
     setup.exec = "pnpm install";
   };
 

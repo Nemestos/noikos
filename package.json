@@ -2,19 +2,24 @@
 	"name": "noikos",
 	"private": true,
 	"scripts": {
-		"dev": "pnpm --parallel --filter './apps/*' dev",
-		"build": "pnpm --filter './packages/*' build && pnpm --filter './apps/*' build",
-		"lint": "pnpm biome lint .",
-		"format": "pnpm biome format . --write",
-		"check": "pnpm biome check . --write",
-		"typecheck": "pnpm --recursive typecheck",
-		"prepare": "husky"
+		"build": "turbo build",
+		"check": "biome check .",
+		"check:fix": "biome check . --write",
+		"dev": "turbo dev",
+		"prepare": "husky",
+		"sort": "sort-package-json 'package.json' 'apps/*/package.json' 'packages/*/package.json'",
+		"typecheck": "pnpm --recursive typecheck"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "latest",
+		"@biomejs/biome": "^2.4.16",
 		"@commitlint/cli": "^21.0.2",
 		"@commitlint/config-conventional": "^21.0.2",
-		"@tsconfig/strictest": "latest",
-		"husky": "^9.1.7"
-	}
+		"@tsconfig/strictest": "^2.0.8",
+		"husky": "^9.1.7",
+		"knip": "^6.16.1",
+		"sort-package-json": "^4.0.0",
+		"turbo": "^2.9.16",
+		"typescript": "^6.0.3"
+	},
+	"packageManager": "pnpm@10.11.0"
 }
